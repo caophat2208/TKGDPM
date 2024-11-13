@@ -1,0 +1,392 @@
+header { 
+    position: relative;
+    } 
+    .shopping-mall{ 
+    
+    position: absolute;
+    bottom: 20px;
+    font-variant: small-caps;
+    margin-left: 150px;
+    } 
+    .shopping-mall>h1{ 
+    font-family: Impact;
+    font-size: 50px;
+    color: #28a745;
+    letter-spacing: 0.3px;
+    text-shadow: #28a745;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+    } 
+    .shopping-mall>h5{ 
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    }
+.logo{
+    margin-right: 20px;
+}
+/* Sticky Navbar */
+.navbar {
+    background-color: #28a745 !important; /* Màu nền xanh */
+    position: -webkit-sticky; /* Sticky cho Safari */
+    position: sticky; /* Sticky cho các trình duyệt khác */
+    top: 0; /* Dính vào đầu trang */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    z-index: 1000; /* Đảm bảo thanh navbar ở trên các phần khác */
+    border-color: #28a745 !important; /* Viền xanh */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+
+/* Luôn hiển thị navbar ở dạng web */
+@media (min-width: 769px) {
+    .navbar-collapse.collapse {
+        display: block !important; /* Hiển thị navbar trên màn hình lớn hơn 768px */
+        height: auto !important; /* Tự động điều chỉnh chiều cao */
+        padding-bottom: 0;
+    }
+}
+
+/* Đối với mobile */
+@media (max-width: 768px) {
+    .navbar-collapse.collapse {
+        display: none !important; /* Ẩn navbar cho đến khi nhấn nút menu */
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .navbar-nav > li {
+        float: none; /* Xếp theo chiều dọc */
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        display: block; /* Hiển thị nút toggle trên mobile */
+    }
+
+    .search-input {
+        width: 100%; /* Chiều rộng tìm kiếm full trên mobile */
+        margin-bottom: 10px;
+    }
+
+    .navbar-header {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Màu sắc, hover và cách hiển thị của navbar */
+.navbar-brand, 
+.navbar-nav > li > a {
+    color: white !important; /* Màu trắng cho text */
+    margin-top: 5px;
+}
+
+.navbar-toggle {
+    margin-right: 10px;
+    border-color: white; /* Viền trắng cho nút toggle */
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white; /* Màu trắng cho các thanh của toggle */
+}
+
+.navbar-nav > li > a:hover {
+    color: #f8f9fa !important; /* Đổi màu khi hover */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #f3faf4; /* Màu nền cho dropdown */
+}
+
+.navbar-nav .dropdown-menu > li > a {
+    color: black !important; /* Màu đen cho dropdown items */
+}
+
+.navbar-nav .dropdown-menu > li > a:hover {
+    background-color: #28a745; /* Màu nền khi hover */
+    color: white !important; /* Màu trắng khi hover */
+}
+
+  section>p{
+    /*Định dạng nền chuyển màu cho thẻ p*/ 
+    background: linear-gradient(#a5b4c4, #206AB5, 
+   #206AB5); border-top-left-radius:2px; border-top-right-radius:2px; text-align:center; font-size:16px; font-weight:bold; color:white; 
+   height:5px; padding-top:5px;
+   } 
+    .sach{ 
+   width:240px
+    }
+    section>p{
+        /*Định dạng nền chuyển màu cho thẻ p*/ 
+        background: linear-gradient(#a5b4c4, #28a745, 
+        #28a745); 
+       border-top-left-radius:2px; 
+       border-top-right-radius:2px; 
+       text-align:center; 
+       font-size:16px;
+       margin-top: 50px; 
+       font-weight:bold; 
+       color:white; 
+       height:30px; 
+       padding-top:5px;
+       } 
+
+       aside#right>div>p{
+        /*Định dạng nền chuyển màu cho thẻ p*/ 
+        background: linear-gradient(#a5b4c4, #f7fcf9, 
+        #f2f9f5); 
+        border-top-left-radius:2px; 
+        border-top-right-radius:2px; 
+        text-align:center; 
+        margin-top: 10px;
+        font-size:16px; 
+        font-weight:bold; 
+        color:white; 
+        height:30px; 
+        padding-top:5px;
+       }
+/* Styling cho nút "Thêm vào giỏ hàng" */
+/* CSS for Cart Dropdown */
+
+.nav-cart-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-cart-box .dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: none;
+}
+
+.nav-cart-box .dropdown-menu .text-center {
+    color: #6c757d;
+    background-color: #f8f9fa;
+}
+
+.nav-cart-box .text-center i {
+    color: #adb5bd;
+}
+
+.nav-cart-box .text-center h3 {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Cart Icon Styling */
+.nav-cart-box {
+    position: relative;
+    
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; /* Giảm padding để khung nhỏ hơn */
+    width: 150px; /* Đặt chiều rộng cụ thể cho khung giỏ hàng */
+    margin-top: 14px;
+}
+
+.nav-cart-box a {
+    color: #ffffff; /* White text color */
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Đảm bảo nội dung bên trong chiếm toàn bộ chiều rộng khung */
+}
+
+.nav-cart-box .la-shopping-cart {
+    margin-left: 5px; /* Giảm margin để biểu tượng gần hơn */
+    font-size: 18px; /* Giảm kích thước biểu tượng */
+}
+
+.nav-cart-box .badge {
+    background-color: #ffcc00; /* Yellow badge background */
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3px 6px; /* Giảm padding để badge nhỏ hơn */
+    font-size: 10px; /* Giảm kích thước font */
+    margin-left: 5px;
+}
+
+.nav-cart-box .nav-box-text {
+    font-size: 14px; /* Giảm kích thước font */
+    color: #ffffff;
+    margin-right: 5px; /* Giảm margin để text gần hơn */
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: none;
+    padding: 10px; /* Giảm padding để khung nhỏ hơn */
+    width: 300px; /* Đặt chiều rộng cụ thể cho dropdown */
+    height: auto; /* Đặt chiều cao tự động */
+    display: none; /* Ẩn mặc định */
+}
+.dropdown-menu.show {
+    display: block; /* Hiển thị khi có class 'show' */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu .text-center {
+    color: #6c757d;
+}
+
+.dropdown-menu .text-center i {
+    color: #adb5bd;
+}
+
+.dropdown-menu .text-center h3 {
+    font-weight: 600;
+    color: #495057;
+}
+
+
+
+.btn-add-to-cart {
+    background-color: #28a745; /* Màu nền xanh */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách padding */
+    text-transform: uppercase; /* Chữ in hoa */
+    font-weight: bold; /* Đậm chữ */
+    border: none; /* Xóa viền */
+    border-radius: 5px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ dạng tay */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi khi hover */
+}
+
+.btn-add-to-cart:hover {
+    background-color: #1b9a49; /* Thay đổi màu nền khi hover */
+    color: white; /* Giữ màu chữ trắng */
+}
+
+.btn-primary a {
+    color: white; /* Đảm bảo màu chữ trắng cho liên kết */
+    text-decoration: none; /* Xóa gạch dưới cho liên kết */
+}
+
+.btn-primary a:hover {
+    color: white; /* Đảm bảo liên kết không thay đổi màu khi hover */
+}
+
+/* Responsive cho mobile: Hiển thị 2 sản phẩm mỗi dòng */
+
+
+/* Desktop (màn hình lớn hơn 768px) */
+@media (min-width: 767px) {
+    .col-md-3 {
+        width: 23%; /* Hiển thị nhiều sản phẩm trong cùng một hàng */
+        display: inline-block;
+        margin: 1%; /* Khoảng cách giữa các sản phẩm */
+    }
+}
+
+
+footer {
+    background-color: #282828;
+    color: #d1d1d1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer h3 {
+    font-size: 2.5rem;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer a {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.nav-login-signup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa các nút */
+    margin-top: -30px; /* Điều chỉnh để căn chỉnh với phần giỏ hàng */
+}
+
+.nav-login-signup a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px 10px; /* Giảm padding để nút nhỏ hơn */
+    border-radius: 5px; /* Bo góc nhẹ */
+}
+
+.nav-login-signup a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hiệu ứng hover */
+}
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+.quantity-input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.glyphicon-remove {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cart-summary .cart-count {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-summary #total-price {
+    font-size: 1.5em;
+    color: #d9534f;
+}
+.centered-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+

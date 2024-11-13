@@ -1,0 +1,76 @@
+/* Ensure the slider container takes up full width and is responsive */
+#slide {
+  position: relative;
+  width: 100%; /* Full width for all devices */
+  max-width: 100%; /* Prevent any overflow */
+  overflow: hidden;
+  margin: 0 auto; /* Center the slider */
+}
+
+/* Container for the images */
+.slide-container {
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox for aligning items horizontally */
+}
+
+.slide-stage {
+  display: flex; /* Horizontal slide */
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure the width adapts to the viewport */
+}
+
+.slide-image {
+  flex: 1; /* Each image takes equal space */
+  width: 100%; /* Adjust image to take full width */
+  min-width: 100%; /* Ensure it takes up full width of the container */
+}
+
+.slide-image img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for pager controls (arrows) */
+.slide-pager {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slide-control-prev, 
+.slide-control-next {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Make sure the slider works on mobile by adding media queries */
+@media (max-width: 768px) {
+  #slide {
+      height: auto; /* Adjust height for smaller devices */
+  }
+
+  .slide-control-prev, .slide-control-next {
+      padding: 5px; /* Reduce padding on smaller screens */
+  }
+
+  .slide-pager {
+      top: 80%; /* Adjust the position of controls for better visibility */
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-control-prev, .slide-control-next {
+      font-size: 16px; /* Reduce the size of the controls on smaller screens */
+      padding: 5px; /* Smaller padding for mobile devices */
+  }
+
+  .slide-pager {
+      top: 85%; /* Push down the pager for smaller mobile screens */
+  }
+}

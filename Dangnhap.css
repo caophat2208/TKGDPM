@@ -1,0 +1,21 @@
+.gry-bg {
+    display: flex;               /* Sử dụng flexbox */
+    justify-content: center;     /* Căn giữa theo chiều ngang */
+    align-items: center;         /* Căn giữa theo chiều dọc */
+    
+}
+
+.profile {
+    max-width: 600px;           /* Đặt chiều rộng tối đa cho khung */
+    width: 100%;                /* Đảm bảo khung không rộng hơn */
+}
+.btn-block{
+    background-color: #20b559;
+}
+
+.forgot-password-link {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,65 @@
+
+
+.article-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+    position: relative;
+}
+.article-item:hover {
+    background-color: #f9f9f9;
+}
+/* Style for the numbering */
+.article-item .number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #20b559;
+    margin-right: 15px;
+    min-width: 30px;
+    text-align: center;
+}
+.article-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.article-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+.article-content p {
+    color: #666;
+    margin: 5px 0 0;
+}
+.article-content a {
+    text-decoration: none;
+    color: inherit;
+}
+.article-content a:hover h3 {
+    color: #20b559;
+}
+
+/* Footer styles */
+footer {
+    background-color: #282828;
+    color: #d1d1d1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer h3 {
+    font-size: 2.5rem;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer a {
+    color: #d1d1d1;
+    text-decoration: none;
+}
