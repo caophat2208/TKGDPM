@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Trangchu.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Giohang.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Slider.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="row"> 
+        <div class="shopping-mall"> 
+            <h1>Mi'S Harvest</h1> 
+            <h5>Nông sản việt nam</h5> 
+        </div> 
+        <img class="Logo" src="C:\TKGDPM\BaiCuoiKy\Image\Logo.jpg" width="150" height="150" />
+    </header> 
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mi'S Harvest</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Trangchu.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <li><a href="Gioithieu.html"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sản phẩm <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Hat thô - tươi</a></li>
+                          <li><a href="#">Hạt rang</a></li>
+                          <li><a href="#">Hạt tẩm</a></li>
+                          <li><a href="#">Hạt đóng gói</a></li>
+                          <li><a href="#">Hạt mix</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="Blog.html"><span class="glyphicon glyphicon-envelope"></span> Blog</a></li>
+                    <li><a href="Gopy.html"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                </ul>
+                <div style="margin-top: 12px; margin-left: 8px;" class="navbar-form navbar-left">
+                    <input type="text" placeholder="Tìm kiếm" class="form-control search-input" />
+                    <button class="btn btn-default" type="submit">Tìm kiếm</button>
+                </div>
+
+                <div class="nav-cart-box dropdown h-100" id="cart_items">
+                    <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100" data-toggle="dropdown" data-display="static">
+                        <i class="la la-shopping-cart la-2x opacity-80"></i>
+                        <span class="flex-grow-1 ml-1">
+                            <span class="badge badge-primary badge-inline badge-pill cart-count">0</span>
+                            <span class="nav-box-text d-none d-xl-block opacity-70">Giỏ hàng</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-center dropdown-menu-lg p-0 stop-propagation">
+                        <div class="text-center p-3">
+                            <i class="las la-frown la-3x opacity-60 mb-3"></i>
+                            <h3 class="h6 fw-700">Chưa có sản phẩm nào trong giỏ hàng</h3>
+                        </div>
+                        <ul id="cart-items"></ul>
+                        <p>Total: <span id="total-price">0</span> VND</p>
+                        <a href="Giohang2.html" class="btn btn-primary">Xem giỏ hàng</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="nav-login-signup">
+                    <a href="Dangnhap.html">Đăng nhập</a>
+                    <a href="Dangky.html">Đăng ký</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    
+    
+    <article>
+    <aside class="col-sm-3">
+        <div class="panel panel-default"> 
+            <div class="panel-heading"> 
+                <span class="glyphicon glyphicon-th-list"></span> 
+                <strong>Danh mục</strong> 
+            </div> 
+            <div class="list-group"> 
+                <a href="#" class="list-group-item">Hạt thô - tươi</a> 
+                <a href="#" class="list-group-item">Hạt rang</a> 
+                <a href="#" class="list-group-item">Hạt tẩm</a> 
+                <a href="#" class="list-group-item">Hạt đóng gói</a> 
+                <a href="#" class="list-group-item">Hạt mix</a> 
+            </div>
+        </div>
+    </aside>
+
+    <div class="cart-container">
+        <aside class="cart-items">
+            <div class="cart-wrapper sm-touch-scroll">
+                <form class="woocommerce-cart-form" action="https://nongsan1.vnwordpress.net/gio-hang" method="post">
+                    <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th class="product-name" colspan="3">Sản phẩm</th>
+                                <th class="product-price">Giá</th>
+                                <th class="product-quantity">Số lượng</th>
+                                <th class="product-subtotal">Tạm tính</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Các sản phẩm sẽ được thêm vào đây bằng JavaScript -->
+                        </tbody>
+                    </table>
+                    <div class="price-total" style="text-align: right; font-weight: bold;">
+                        Tổng tiền: <span id="total-price">0</span><sup>₫</sup>
+                    </div>
+                </form>
+            </div>
+        </aside>
+    
+        <aside class="cart-summary">
+            <h3>Cộng giỏ hàng</h3>
+            <table>
+                <tr>
+                    <td>Tạm tính</td>
+                    <td id="subtotal">0₫</td>
+                </tr>
+                <tr>
+                    <td>Tổng</td>
+                    <td id="total">0₫</td>
+                </tr>
+            </table>
+            <a href="#" class="checkout-button">Tiến hành thanh toán</a>
+            <div class="coupon">
+                <label for="coupon_code">Phiếu ưu đãi</label>
+                <input type="text" name="coupon_code" class="input-text" id="coupon_code" placeholder="Mã ưu đãi">
+                <button type="submit" class="button">Áp dụng</button>
+            </div>
+        </aside>
+    </div>
+    
+
+    <script>
+        let cart = [];
+
+        function loadCart() {
+            const savedCart = localStorage.getItem('cart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCart();
+            }
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+            const subtotalElement = document.getElementById('subtotal');
+            const totalElement = document.getElementById('total');
+
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><button onclick="removeFromCart(${index})">Xóa</button></td>
+                    <td class="product-thumbnail">
+                        <a href="#"><img width="100" height="100" src="C:\TKGDPM\BaiCuoiKy\Image\hac dieu.jpg" alt="Sản phẩm"></a>
+                    </td>
+                    <td class="product-name" data-title="Sản phẩm">
+                        <a href="#">${item.name}</a>
+                    </td>
+                    <td class="product-price" data-title="Giá">
+                        <p><span>${item.price}</span><sup>đ</sup></p>
+                    </td>
+                    <td class="product-quantity" data-title="Số lượng">
+                        <div class="quantity buttons_added">
+                            <input type="number" class="input-text qty text" step="1" min="1" value="${item.quantity}" title="SL" size="4" inputmode="numeric" onchange="updateQuantity(${index}, this.value)">
+                        </div>
+                    </td>
+                    <td class="product-subtotal" data-title="Tạm tính">
+                        <p><span>${item.price * item.quantity}</span><sup>đ</sup></p>
+                    </td>
+                    
+                `;
+                cartItems.appendChild(tr);
+                total += item.price * item.quantity;
+            });
+
+            totalPriceElement.textContent = total;
+            subtotalElement.textContent = total + '₫';
+            totalElement.textContent = total + '₫';
+        }
+
+        function updateQuantity(index, quantity) {
+            cart[index].quantity = parseInt(quantity);
+            if (cart[index].quantity === 0) {
+                removeFromCart(index);
+            } else {
+                updateCart();
+                saveCart();
+            }
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+            saveCart();
+        }
+
+        function saveCart() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        window.onload = loadCart;
+    </script>
+    <script src="Script/Themvaogiohang.js"></script>
+</body>
+</html>

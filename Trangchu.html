@@ -1,0 +1,451 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Trangchu.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Slider.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Giohang.css">  
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Sanpham.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    
+ 
+    <title>Layout</title> 
+</head> 
+<body> 
+ 
+    <header class="row"> 
+        <div class="shopping-mall"> 
+            <h1>Mi'S Harvest</h1> 
+            <h5>Nông sản việt nam</h5> 
+        </div> 
+        <img class="Logo" src="C:\TKGDPM\BaiCuoiKy\Image\Logo.jpg" width="150" height="150" />
+    </header> 
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mi'S Harvest</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Trangchu.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <li><a href="Gioithieu.html"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Danh mục sản phẩm <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="C:\TKGDPM\BaiCuoiKy\Sanpham.html">Hat điều</a></li>
+                          <li><a href="#">Hạt rang</a></li>
+                          <li><a href="#">Hạt tẩm</a></li>
+                          <li><a href="#">Hạt đóng gói</a></li>
+                          <li><a href="#">Hạt mix</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Blog.html"><span class="glyphicon glyphicon-envelope"></span> Blog</a></li>
+                    <li><a href="Gopy.html"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                </ul>
+                <div style="margin-top: 12px; margin-left: 8px;" class="navbar-form navbar-left">
+                    <input type="text" placeholder="Tìm kiếm" class="form-control search-input" />
+                    <button class="btn btn-default" type="submit">Tìm kiếm</button>
+                </div>
+
+                <div class="nav-cart-box dropdown h-100" id="cart_items">
+                    <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100" data-toggle="dropdown" data-display="static">
+                        <i class="la la-shopping-cart la-2x opacity-80"></i>
+                        <span class="flex-grow-1 ml-1">
+                            <span class="badge badge-primary badge-inline badge-pill cart-count">0</span>
+                            <span class="nav-box-text d-none d-xl-block opacity-70">Giỏ hàng</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-center dropdown-menu-lg p-0 stop-propagation">
+                        <div class="text-center p-3">
+                            <i class="las la-frown la-3x opacity-60 mb-3"></i>
+                            <h3 class="h6 fw-700">Sản phẩm trong giỏ hàng: </h3>
+                        </div>
+                        <ul id="cart-items"></ul>
+                        <p>Tổng: <span id="total-price">0</span> VND</p>
+                        <a href="Giohang.html" class="btn btn-primary">Xem giỏ hàng</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="nav-login-signup">
+                    <a href="Dangnhap.html">Đăng nhập</a>
+                    <a href="Dangky.html">Đăng ký</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    
+    <aside id="slide">           
+        <div class="slide-pager">
+            <div class="slide-control-prev">«</div> 
+            <div class="slide-control-next">»</div>
+        </div> 
+        <div class="slide-container"> 
+            <div class="slide-stage"> 
+                <div class="slide-image"><img src="C:\TKGDPM\BaiCuoiKy\Image\HacDieuCC.jpg" alt="Hình 1"/></div>
+                <div class="slide-image"><img src="C:\TKGDPM\BaiCuoiKy\Image\bannersdfd12234.jpg" alt="Hình 2"/></div>  
+            </div>   
+        </div>  
+    </aside>
+    <script src="Script/jquery1.10.1.min.js"></script> 
+    <script src="Script/Slider.js"></script>
+
+    <div class="col-md-12">
+        <section>
+            <p>Sản phảm bán chạy</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="C:\TKGDPM\BaiCuoiKy\chitietsanpham.html">
+                    <div class="product-image">
+                        <img src="C:\TKGDPM\BaiCuoiKy\Image\Screenshot 2024-11-07 160220.png" alt="Sản phẩm 3">
+                    </div>
+                    <div class="product-title">Hạt điều bình phước</div>
+                    <div class="product-price">139.000₫</div>
+                    </a>
+                    <button class="add-to-cart-button" onclick="addToCart('Hạt điều bình phước', 139000)">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="C:\TKGDPM\BaiCuoiKy\chitietsanpham.html">
+                    <div class="product-image">
+                        <img src="C:\TKGDPM\BaiCuoiKy\Image\Mật ong.png" alt="Sản phẩm 2">
+                    </div>
+                    <div class="product-title">Mật ong</div>
+                    <div class="product-price">119.000₫</div>
+                    </a>
+                    <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="C:\TKGDPM\BaiCuoiKy\Image\Mật ong, cf.png" alt="Sản phẩm 3">
+                    </div>
+                    <div class="product-title">Mật ông cà phê</div>
+                    <div class="product-price">119.000₫</div>
+                    <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <a href="#">
+                    <div class="product-image">
+                        <img src="C:\TKGDPM\BaiCuoiKy\Image\Screenshot 2024-11-07 160252.png" alt="Sản phẩm 2">
+                    </div>
+                    <div class="product-title">Bột cà phê</div>
+                    <div class="product-price">139.000₫</div>
+                    </a>
+                    <button class="add-to-cart-button" onclick="addToCart('Bột cà phê', 139000)">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Thêm nhiều sản phẩm hơn nếu cần -->
+        </section>
+    </div>
+
+        <!-- Phần hạt đóng họp -->
+        <div class="col-md-12">
+            <section>
+                <p>Sản phảm mới</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <a href="C:\TKGDPM\BaiCuoiKy\Chitietsanpham2.html">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\hạt macca.png" alt="Sản phẩm 2">
+                        </div>
+                        <div class="product-title">Hạt macca rang Nguyên Chất</div>
+                        <div class="product-price">160.000₫</div>
+                        </a>
+                        <button class="add-to-cart-button" onclick="addToCart('Hạt macca rang Nguyên Chất', 160000)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <a href="C:\TKGDPM\BaiCuoiKy\chitietsanpham.html">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt điều rang.png" alt="Sản phẩm 2">
+                        </div>
+                        <div class="product-title">Hạt điều rang muối tỏi ớt</div>
+                        <div class="product-price">109.000₫</div>
+                        </a>
+                        <button class="add-to-cart-button" onclick="addToCart('Hạt điều rang muối tỏi ớt', 109000)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\hạt cacao rang.png" alt="Sản phẩm 3">
+                        </div>
+                        <div class="product-title">Hạt cacao rang</div>
+                        <div class="product-price">70.000₫</div>
+                        <button class="add-to-cart-button" onclick="addToCart('Hạt điều cacao rang', 70000)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt Điều Rang Muối Vỏ Lụa Đảo Tay.png" alt="Sản phẩm 3">
+                        </div>
+                        <div class="product-title">Hạt Điều Rang Muối Vỏ Lụa Đảo Tay</div>
+                        <div class="product-price">128.000₫</div>
+                        <button class="add-to-cart-button" onclick="addToCart('Hạt Điều Rang Muối Vỏ Lụa Đảo Tay', 128000)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Thêm nhiều sản phẩm hơn nếu cần -->
+            </section>
+        </div>
+
+        <!-- Phần sản phẩm mới -->
+        <div class="col-md-12">
+            <section>
+                <p>Hạt điều</p>
+            <div class="row">
+                <div class="col-sm-3"> 
+                    <div class="panel "> 
+                
+                        <div class="panel-body"> 
+                            <img src="Image/567.jpg" class="img-responsive" alt="Sản phẩm mới 1"/>
+                        </div> 
+                
+                    </div>  
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <a href="#">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt phô mai.png" alt="Sản phẩm 2">
+                        </div>
+                        <div class="product-title">Hạt Điều Phô Mai Trứng Muối Kaz</div>
+                        <div class="product-price">63.000₫</div>
+                        </a>
+                        <button class="add-to-cart-button" onclick="">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt caramel.png" alt="Sản phẩm 3">
+                        </div>
+                        <div class="product-title">Hạt Điều Caramel Muối Vị Nguyên Bản</div>
+                        <div class="product-price">63.000₫</div>
+                        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt nguyên bản.png" alt="Sản phẩm 3">
+                        </div>
+                        <div class="product-title">Hạt Điều Rang Muối Vị Nguyên Bản</div>
+                        <div class="product-price">63.000₫</div>
+                        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Thêm nhiều sản phẩm hơn nếu cần -->
+            </section>
+        </div>
+        <script src="C:\TKGDPM\BaiCuoiKy\Script\Themvaogiohang.js"></script>
+    </div>
+    
+    
+
+    <div class="container">
+        <div class="row centered-row">
+            <div class="col-md-3">
+                <div class="col-inner">
+                    <div class="icon-box featured-box icon-box-left text-left">
+                        <div class="icon-box-img" style="width: 54px;">
+                            <div class="icon">
+                                <div class="icon-inner">
+                                    <img 
+                                        width="66" 
+                                        height="66" 
+                                        src="https://nongsan1.vnwordpress.net/wp-content/uploads/2017/09/icon1.jpg" 
+                                        class="attachment-medium size-medium" 
+                                        alt="" 
+                                        loading="lazy" 
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-box-text last-reset">
+                            <p>
+                                <span style="font-size: 120%;">
+                                    <strong>
+                                        <span style="color: #008000;">Vận chuyển miễn phí</span>
+                                    </strong>
+                                </span>
+                                <br />
+                                với đơn hàng &gt; 600.000đ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col-inner">
+                    <div class="icon-box featured-box icon-box-left text-left">
+                        <div class="icon-box-img" style="width: 54px;">
+                            <div class="icon">
+                                <div class="icon-inner">
+                                    <img 
+                                        width="66" 
+                                        height="66" 
+                                        src="https://nongsan1.vnwordpress.net/wp-content/uploads/2017/09/icon2.jpg" 
+                                        class="attachment-medium size-medium" 
+                                        alt="" 
+                                        loading="lazy" 
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-box-text last-reset">
+                            <p>
+                                <span style="font-size: 120%;">
+                                    <strong>
+                                        <span style="color: #008000;">chất lượng đảm bảo</span>
+                                    </strong>
+                                </span>
+                                <br />
+                                Hàng tự sản xuất
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col-inner">
+                    <div class="icon-box featured-box icon-box-left text-left">
+                        <div class="icon-box-img" style="width: 54px;">
+                            <div class="icon">
+                                <div class="icon-inner">
+                                    <img 
+                                        width="66" 
+                                        height="66" 
+                                        src="https://nongsan1.vnwordpress.net/wp-content/uploads/2017/09/icon3.jpg" 
+                                        class="attachment-medium size-medium" 
+                                        alt="" 
+                                        loading="lazy" 
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-box-text last-reset">
+                            <p>
+                                <span style="font-size: 120%;">
+                                    <strong>
+                                        <span style="color: #008000;">Đổi trả miễn phí</span>
+                                    </strong>
+                                </span>
+                                <br />
+                                trong vòng 15 ngày
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col-inner">
+                    <div class="icon-box featured-box icon-box-left text-left">
+                        <div class="icon-box-img" style="width: 54px;">
+                            <div class="icon">
+                                <div class="icon-inner">
+                                    <img 
+                                        width="66" 
+                                        height="66" 
+                                        src="https://nongsan1.vnwordpress.net/wp-content/uploads/2017/09/icon4.jpg" 
+                                        class="attachment-medium size-medium" 
+                                        alt="" 
+                                        loading="lazy" 
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-box-text last-reset">
+                            <p>
+                                <span style="font-size: 120%;">
+                                    <strong>
+                                        <span style="color: #008000;">Hỗ trợ tư vấn</span>
+                                    </strong>
+                                </span>
+                                <br />
+                                Từ: 06h30 &#8211; 23h00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Footer -->
+<footer>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div>
+            <h3>GIỚI THIỆU</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Giới thiệu</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Khách hàng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Đối tác</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hệ thống quản lý</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Tuyển dụng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hướng dẫn sử dụng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hướng dẫn thanh toán</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Câu hỏi thường gặp</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Kiểm tra đơn hàng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Chính sách bảo mật thông tin</a></li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <h3>LIÊN HỆ</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Địa chỉ: </a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Điện thoại: 0xxxx</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Email: nhauyentranthuy62@gmail.com</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</footer>
+</div> 
+</body> 
+</html>

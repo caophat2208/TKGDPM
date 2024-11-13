@@ -1,0 +1,125 @@
+<li><a href="#"><span class="glyphicon glyphicon-th-list"></span> Sản phẩm</a></li>
+
+<div class="col-sm-3"> 
+    <div class="panel panel"> 
+        <div class="panel-body"> 
+            <img src="Image/567.jpg" class="img-responsive" alt="Hạt thô - tươi 4"/>
+        </div> 
+          
+    </div>       
+</div>
+
+<div class="col-md-3 sidebar">
+    <h5>DANH MỤC SẢN PHẨM</h5>
+    <ul class="list-group">
+        <li class="list-group-item">Hạt điều sọ</li>
+        <li class="list-group-item">Hạt tiêu đen</li>
+        <li class="list-group-item">Hạt điều rang muối</li>
+        <li class="list-group-item">Hạt điều tẩm mật ong</li>
+        <li class="list-group-item">Mật ong cao cấp</li>
+        <li class="list-group-item">Tiêu hạt cao cấp</li>
+        <li class="list-group-item">Tinh dầu hồi</li>
+        <li class="list-group-item">Tinh dầu quế</li>
+    </ul>
+    <h5 class="mt-4">SẢN PHẨM BÁN CHẠY</h5>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Hạt điều vỏ hỗn hợp
+            <span class="badge badge-success">300.000₫</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Hạnh nhân rang bơ
+            <span class="badge badge-success">450.000₫</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Hạt tiêu xanh chất lượng cao
+            <span class="badge badge-success">600.000₫</span>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 sidebar">
+            <h5>DANH MỤC SẢN PHẨM</h5>
+            <ul class="list-group">
+                <li class="list-group-item">Hạt điều sọ</li>
+                <li class="list-group-item">Hạt tiêu đen</li>
+                <li class="list-group-item">Hạt điều rang muối</li>
+                <li class="list-group-item">Hạt điều tẩm mật ong</li>
+                <li class="list-group-item">Mật ong cao cấp</li>
+                <li class="list-group-item">Tiêu hạt cao cấp</li>
+                <li class="list-group-item">Tinh dầu hồi</li>
+                <li class="list-group-item">Tinh dầu quế</li>
+            </ul>
+            <h5 class="mt-4">SẢN PHẨM BÁN CHẠY</h5>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Hạt điều vỏ hỗn hợp
+                    <span class="badge badge-success">300.000₫</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Hạnh nhân rang bơ
+                    <span class="badge badge-success">450.000₫</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Hạt tiêu xanh chất lượng cao
+                    <span class="badge badge-success">600.000₫</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Product List -->
+        <div class="col-md-9">
+            
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <a href="C:\TKGDPM\BaiCuoiKy\chitietsanpham.html">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Screenshot 2024-11-07 160220.png" alt="Sản phẩm 2">
+                        </div>
+                        <div class="product-title">Hạt macca Úc 500gr</div>
+                        <div class="product-price">500.000₫</div>
+                        </a>
+                        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <a href="C:\TKGDPM\BaiCuoiKy\chitietsanpham.html">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Screenshot 2024-11-07 160220.png" alt="Sản phẩm 2">
+                        </div>
+                        <div class="product-title">Hạt macca Úc 500gr</div>
+                        <div class="product-price">500.000₫</div>
+                        </a>
+                        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Screenshot 2024-11-07 160220.png" alt="Sản phẩm 3">
+                        </div>
+                        <div class="product-title">Hạt óc chó Mỹ 500gr</div>
+                        <div class="product-price">550.000₫</div>
+                        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="C:\TKGDPM\BaiCuoiKy\Image\Screenshot 2024-11-07 160220.png" alt="Sản phẩm 3">
+                        </div>
+                        <div class="product-title">Hạt óc chó Mỹ 500gr</div>
+                        <div class="product-price">550.000₫</div>
+                        <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Thêm nhiều sản phẩm hơn nếu cần -->
+            
+        </div>
+    </div>
+</div>

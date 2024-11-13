@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Trangchu.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Slider.css">  
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Blog.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Chitietsanpham.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Sanpham.css">
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Layout</title> 
+</head> 
+<body> 
+ 
+    <header class="row"> 
+        <div class="shopping-mall"> 
+            <h1>Mi'S Harvest</h1> 
+            <h5>Nông sản việt nam</h5> 
+        </div> 
+        <img class="Logo" src="C:\TKGDPM\BaiCuoiKy\Image\Logo.jpg" width="150" height="150" />
+    </header> 
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mi'S Harvest</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Trangchu.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <li><a href="Gioithieu.html"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Danh mục sản phẩm <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="C:\TKGDPM\BaiCuoiKy\Sanpham.html">Hat điều</a></li>
+                          <li><a href="#">Hạt rang</a></li>
+                          <li><a href="#">Hạt tẩm</a></li>
+                          <li><a href="#">Hạt đóng gói</a></li>
+                          <li><a href="#">Hạt mix</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Blog.html"><span class="glyphicon glyphicon-envelope"></span> Blog</a></li>
+                    <li><a href="Gopy.html"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                </ul>
+                <div style="margin-top: 12px; margin-left: 8px;" class="navbar-form navbar-left">
+                    <input type="text" placeholder="Tìm kiếm" class="form-control search-input" />
+                    <button class="btn btn-default" type="submit">Tìm kiếm</button>
+                </div>
+
+                <div class="nav-cart-box dropdown h-100" id="cart_items">
+                    <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100" data-toggle="dropdown" data-display="static">
+                        <i class="la la-shopping-cart la-2x opacity-80"></i>
+                        <span class="flex-grow-1 ml-1">
+                            <span class="badge badge-primary badge-inline badge-pill cart-count">0</span>
+                            <span class="nav-box-text d-none d-xl-block opacity-70">Giỏ hàng</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-center dropdown-menu-lg p-0 stop-propagation">
+                        <div class="text-center p-3">
+                            <i class="las la-frown la-3x opacity-60 mb-3"></i>
+                            <h3 class="h6 fw-700">Sản phẩm trong giỏ hàng: </h3>
+                        </div>
+                        <ul id="cart-items"></ul>
+                        <p>Tổng: <span id="total-price">0</span> VND</p>
+                        <a href="Giohang.html" class="btn btn-primary">Xem giỏ hàng</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="nav-login-signup">
+                    <a href="Dangnhap.html">Đăng nhập</a>
+                    <a href="Dangky.html">Đăng ký</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    
+        <div class="col-md-3 sidebar">
+            <h5>DANH MỤC SẢN PHẨM</h5>
+            <ul class="list-group">
+                <a href="Sanpham.html" class="list-group-item">Hạt điều</a>
+                <a href="#" class="list-group-item">Hạt rang</a>
+                <a href="#" class="list-group-item">Hạt tẩm</a>
+                <a href="#" class="list-group-item">Hạt đóng gói</a>
+                <a href="#" class="list-group-item">hạt mix</a>
+            </ul>
+            
+            <div class="mt-4"> 
+                <h5>DANH MỤC SẢN PHẨM</h5>
+            </div> 
+            <div> 
+                <a href="Chitietsanpham2.html" class="list-group-item">
+                    <img src="C:\TKGDPM\BaiCuoiKy\Image\hạt macca.png" alt="Hạt rang" class="img-thumbnail">
+                    <p>Hạt macca rang nguyên chất </p>
+                    <p> 160.000₫</p>
+                </a> 
+                <a href="#" class="list-group-item">
+                    <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt điều rang.png" alt="Hạt rang" class="img-thumbnail">
+                    <p>Hạt điều rang muối tỏi ớt </p>
+                    <p> 109.000₫</p>
+                </a> 
+                <a href="#" class="list-group-item">
+                    <img src="C:\TKGDPM\BaiCuoiKy\Image\hạt cacao rang.png" alt="Hạt rang" class="img-thumbnail">
+                    <p>Hạt cacao rang </p>
+                    <p> 70.000₫</p>
+                </a> 
+                <a href="#" class="list-group-item">
+                    <img src="C:\TKGDPM\BaiCuoiKy\Image\Hạt Điều Rang Muối Vỏ Lụa Đảo Tay.png" alt="hat rang" class="img-thumbnail">
+                    <p>Hạt Điều Rang Muối Vỏ Lụa Đảo Tay</p>
+                    <p> 128.000₫</p>
+                </a> 
+            </div>
+        </div> 
+    
+    <div class="container ">
+        <aside class="col-sm-6">
+        
+                <div class="row">
+                    <!-- Thông tin sản phẩm -->
+                    <div class="entry-content single-page">
+                        <h1 class="entry-title">6 ĐIỀU CẦN GHI NHỚ VỀ BỆNH THIỂU NĂNG TUẦN HOÀN NÃO</h1>
+                        <div class="entry-divider is-divider small"></div>
+                        
+                            <div class="entry-meta uppercase is-xsmall">
+                                <span class="posted-on">Posted on <a href="https://nongsan1.vnwordpress.net/6-dieu-can-ghi-nho-ve-benh-thieu-nang-tuan-hoan-nao.html" rel="bookmark"><time class="entry-date published" datetime="2017-09-16T13:06:14+07:00">16/09/2017</time><time class="updated" datetime="2020-07-13T17:18:42+07:00">13/07/2020</time></a></span><span class="byline"> by <span class="meta-author vcard"><a class="url fn n" href="https://nongsan1.vnwordpress.net/author/demo_w1p">AZnet AZnet</a></span></span>	</div>
+                            </div>
+                                    
+                        <p>Bệnh thiểu năng tuần hoàn não là bệnh lí khi tình trạng máu lên não không đủ khiến tế bào thần kinh không đủ năng lượng hoạt hộng ảnh hưởng đến cấu trúc, sự tồn tại và hoạt động của hệ thần kinh trung ương. Căn bệnh khá nguy hiểm và dễ nhầm lẫn với chứng đau nửa đầu do đó trang bị kiến thức về căn bệnh này là cách tốt nhất để phòng chống, phát hiện và điều trị bệnh kịp thời. Hãy cùng tìm hiểu một cách tổng quan về bệnh thiểu năng tuần hoàn não qua bài viết này nhé.</p>
+                        <p><strong> Thiểu năng tuần hoàn não là gì?</strong></p>
+                        <p><img loading="lazy" class="wp-image-774 aligncenter" src="http://aturo.vn/wp-content/uploads/2017/08/benh-an-thieu-nang-tuan-hoan-nao-1-300x190.jpg" sizes="(max-width: 677px) 100vw, 677px" srcset="http://aturo.vn/wp-content/uploads/2017/08/benh-an-thieu-nang-tuan-hoan-nao-1-300x190.jpg 300w, http://aturo.vn/wp-content/uploads/2017/08/benh-an-thieu-nang-tuan-hoan-nao-1.jpg 400w" alt="" width="300px" height="200px" /></p>
+                        <p>Các triệu chứng của thiểu năng tuần hoàn não</p>
+                        <p>Nguyên nhân và biến chứng</p>
+                        <p>Điều trị và phòng bệnh</p>
+                        <ol>
+                        <li><strong>Thiểu năng tuần hoàn não là gì?</strong></li>
+                        </ol>
+                        <p>Về mặt giải phẫu, não bộ được tưới máu bởi hai nguồn động mạch chính là: hệ động mạch cảnh ở phía trước, có nhiệm vụ chi phối toàn bộ phần lớn bán cầu đại não và hệ động mạch đốt sống thân nền ở phía sau. Ở người bình thường, lưu lượng máu tưới lên não là 55ml máu/100g não/phút, khi lưu lượng máu đến não quá thấp, dưới 20ml/100g não/phút thì gây ra hiện tượng thiếu máu não, gây bệnh thiểu năng tuần hoàn não.</p>
+                        <p>Ngày nay, với áp lực lớn từ công việc, cuộc sống cùng với thói quen ăn uống sinh hoạt không lành mạnh và các bệnh mạn tính như tăng huyết áp, nhiễm mỡ máu, thừa cân, béo phì, nghiện rượu, thuốc lá… đang khiến cho chứng bệnh này có xu hướng gia tăng.</p>
+                        <ol start="2">
+                        <li><strong>Các triệu chứng của thiểu năng tuần hoàn não</strong></li>
+                        </ol>
+                        <p>Giai đoạn đầu, các triệu chứng của bệnh thường xuất hiện thoáng qua, sau đó ngày càng tiến triển và tái phát nhiều hơn. Các triệu chứng đó bao gồm:</p>
+                        <p>Nhức đầu: đây là biểu hiện xuất hiện sớm nhất và phổ biến nhất. Người bệnh sẽ cảm thấy đau đầu, đau sau gáy, vùng chẩm, cảm giác nặng trịch ở vùng đầu và sau gáy, đau nhức khó chịu, chỉ muốn bóp hoặc đập nhẹ vào vị trí đau, đau tăng khi phải tập trung suy nghĩ nhiều.</p>
+                        <p>Chóng mặt và rối loạn thăng bằng: sau đâu đầu là các cơn chóng mặt. Người bị bệnh thiểu năng tuần hoàn não sẽ có cảm giác lảo đảo thoáng qua hoặc mọi thứ và bản thân đang xoay tròn. Kèm theo đó là hoa mắt, trời đất tối sầm lại, nhất là khi di chuyển tư thế hay thay đổi điểm nhìn đột ngột. Trong cơn đau đầu chóng mặt, người bệnh có thể có cảm giác khó chịu, buồn nôn.</p>
+                        <p>Rối loạn vận nhãn: xuất hiện hiện tượng nhìn đôi, nhìn mờ hoặc có ám điểm kéo dài trong vài giây vài phút khi di chuyển tư thế. Có thể gặp ảo thị.</p>
+                        <p>Các rối loạn vận động: khi lượng máu lên não bị giảm sẽ gây ra rối loạn vận động, người bệnh cảm giác hai chân như bị lấy đi đột ngột, thường xảy ra khi ngửa đầu lên hoặc quay đầu đột ngột.</p>
+                        <p>Rối loạn về giấc ngủ: đây là triệu chứng rất hay gặp và khiến người bệnh rất khó chịu bởi nó diễn ra dai dẳng và khó chữa, đau đầu. Đa phần các trường hợp thường mất ngủ, khó ngủ, ngủ không sâu giấc, một số thì rối loạn thời gian ngủ, ngày ngủ đêm thức, đau đầu sau khi ngủ dậy…</p>
+                        <p>Tuy nhiên, các triệu chứng thiểu năng tuần hoàn não khó nhận biết và rất dễ nhầm lẫn với chứng đau nửa đầu nguy hiểm Migraine nhưng thường bị quy chụp là mắc phải chứng thiểu năng tuần hoàn não do tính phổ biến của nó. Vì vậy chúng tôi cung cấp một số thông tin về bệnh đau nửa đầu Migraine:</p>
+                        <p>Đau nửa đầu Mifrgraine là bệnh lý đau đầu do căn nguyên mạch, gây ra bởi sự co giãn bất thường của mạch máu não do thay đổi đột ngột nồng độ chất dẫn truyền thần kinh Serotonin ở những người có nồng độ nền Serotonin thấp. Triệu chứng điển hình là đau nửa đầu kiểu giật nhói theo nhịp mạch đập, có thể lan sang cả đầu. Trong cơn đau, bệnh nhân có thể sợ ánh sáng, tiếng động và đau tăng lên khi vận động. Ở ⅓ bệnh nhân Migraine có dấu hiệu tiền triệu như mờ mắt, nhìn thấy vệt sáng ngoằn ngoèo nên dễ nhầm lẫn với triệu chứng thiểu năng tuần hoàn não. Điều trị đau nửa đầu Migraine cần kiên trì lâu dài vì đây là chứng bệnh mãn tính. Tại các nước phát triển, thảo dược Feverfew được sử dụng phổ biến nhất giúp điều hòa nồng độ Serotonin trong não, nhờ đó kiểm soát đau nửa đầu hiệu quả.</p>
+                        <ol start="3">
+                        <li><strong>Nguyên nhân và biến chứng</strong></li>
+                        </ol>
+                        <p>Các bệnh mạn tính được cho là một trong những nguyên nhân hàng đầu gây ra bệnh thiểu năng tuần hoàn não. Chủ yếu là xơ vữa hoặc xơ cứng mạch máu làm hẹp lòng mạch máu khiến lượng máu lên não bị giảm, thoái hóa đốt sống cổ chèn ép các mạch máu dẫn lên não, bệnh tăng huyết áp, bệnh máu nhiễm mỡ, đường, các bệnh về tim mạch như van tim, rối loạn nhịp tim, suy thận…</p>
+                        <p>Một số yếu tố khác cũng khiến nguy cơ mắc bệnh cao như bệnh là béo phì, ít vận động, gặp nhiều áp lực, stress, nghiện bia, rượu, thuốc lá…</p>
+                        <p>Do các biểu hiện của bệnh thiếu máu não khá phổ biến và dễ gặp cả ở những người bình thường nên bệnh nhân thường dễ chủ quan và lơ là việc điều trị. Nếu để bệnh tiến diễn lâu ngày có thể sẽ dẫn đến những biến chứng nguy hiểm, đặc biệt là tai biến mạch máu não – nguy cơ tử vong cao. Theo thống kế thì số lượng người tử vong do tai biến mạch máu não cao thứ 3, chỉ đứng sau các bệnh về tim mạch và ung thư.</p>
+                        <ol start="4">
+                        <li><strong>Điều trị và phòng bệnh</strong></li>
+                        </ol>
+                        <p><img loading="lazy" class="wp-image-635 aligncenter" src="http://aturo.vn/wp-content/uploads/2017/08/tanaka-plus-1-300x202.jpg" sizes="(max-width: 677px) 100vw, 677px" srcset="http://aturo.vn/wp-content/uploads/2017/08/tanaka-plus-1-300x202.jpg 300w, http://aturo.vn/wp-content/uploads/2017/08/tanaka-plus-1-768x517.jpg 768w, http://aturo.vn/wp-content/uploads/2017/08/tanaka-plus-1.jpg 900w" alt="" width="300" height="100" /></p>
+                        <p>Bệnh thiểu năng tuần hoàn não tuy nguy hiểm nhưng không phải là không có cách phòng ngừa và điều trị hiệu quả. Chúng ta nên trang bị những kiến thức về căn bệnh này và có kế hoạch phòng bệnh thật sớm.</p>
+                        <p>Khi bị bệnh, cần tìm hiểu nguyên nhân để điều trị bệnh tận gốc, kết hợp với điều trị triệu chứng. Hiện nay có rất nhiều thuốc điều trị triệu chứng của thiếu máu não như đau đầu, chóng mặt, mất ngủ… tùy vào cơ chế bệnh sinh mà thuốc hiệu quả với bệnh nhân này nhưng lại ít hiệu quả với bệnh nhân khác. Vì vậy, để điều trị bệnh hiệu quả và an toàn nhất, bạn phải đi khám trực tiếp và được kê đơn tại các cơ sở y tế chuyên khoa.</p>
+                        <p>Bên cạnh việc dùng thuốc, bệnh nhân cũng phải kết hợp với việc sinh hoạt, ăn uống hợp lý và thể dục thường xuyên; tránh xa các thực phẩm độc hại hay chất kích thích như thuốc lá, bia, rượu, kiểm soát đường máu, hạn chế tối đa các yếu tố gây stress.</p>
+                        <p>Với bệnh nhân bị thiếu máu não mãn tính, áp dụng nhiều cách chữa trị không hiệu quả, thì Hoạt Huyết An Thần Tanaka PlusVới chính là lựa chọn ưu việt, là giải pháp toàn diện cho bệnh nhân thiếu máu não, thúc đẩy mạnh mẽ tuần hoàn máu tới não và tứ chi, tăng sức bền mạch máu não, đồng giảm các triệu chứng đau nhức đầu, chóng mặt, buồn nôn cho người bệnh một cách tự nhiên.</p>
+                        
+                </div>
+            </div>
+            
+        </aside>
+    </div>
+    
+</div>
+<script src="Script/Themvaogiohang.js"></script>
+</div>
+    
+    
+
+</div>
+
+
+<footer>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div>
+            <h3>GIỚI THIỆU</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Giới thiệu</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Khách hàng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Đối tác</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hệ thống quản lý</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Tuyển dụng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hướng dẫn sử dụng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hướng dẫn thanh toán</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Câu hỏi thường gặp</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Kiểm tra đơn hàng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Chính sách bảo mật thông tin</a></li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <h3>LIÊN HỆ</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Địa chỉ: </a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Điện thoại: 0xxxx</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Email: nhauyentranthuy62@gmail.com</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+</div> 
+</body> 
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Trangchu.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Slider.css">
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Giohang.css">  
+    <link rel="stylesheet" type="text/css" href="C:\TKGDPM\BaiCuoiKy\Script\Dangnhap.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+ 
+    <title>Layout</title> 
+</head> 
+<body> 
+ 
+    <header class="row"> 
+        <div class="shopping-mall"> 
+            <h1>Mi'S Harvest</h1> 
+            <h5>Nông sản việt nam</h5> 
+        </div> 
+        <img class="Logo" src="C:\TKGDPM\BaiCuoiKy\Image\Logo.jpg" width="150" height="150" />
+    </header> 
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mi'S Harvest</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Trangchu.html"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+                    <li><a href="Gioithieu.html"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Danh mục sản phẩm <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="C:\TKGDPM\BaiCuoiKy\Sanpham.html">Hat điều</a></li>
+                          <li><a href="#">Hạt rang</a></li>
+                          <li><a href="#">Hạt tẩm</a></li>
+                          <li><a href="#">Hạt đóng gói</a></li>
+                          <li><a href="#">Hạt mix</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Blog.html"><span class="glyphicon glyphicon-envelope"></span> Blog</a></li>
+                    <li><a href="Gopy.html"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                </ul>
+                <div style="margin-top: 12px; margin-left: 8px;" class="navbar-form navbar-left">
+                    <input type="text" placeholder="Tìm kiếm" class="form-control search-input" />
+                    <button class="btn btn-default" type="submit">Tìm kiếm</button>
+                </div>
+
+                <div class="nav-cart-box dropdown h-100" id="cart_items">
+                    <a href="javascript:void(0)" class="d-flex align-items-center text-reset h-100" data-toggle="dropdown" data-display="static">
+                        <i class="la la-shopping-cart la-2x opacity-80"></i>
+                        <span class="flex-grow-1 ml-1">
+                            <span class="badge badge-primary badge-inline badge-pill cart-count">0</span>
+                            <span class="nav-box-text d-none d-xl-block opacity-70">Giỏ hàng</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-center dropdown-menu-lg p-0 stop-propagation">
+                        <div class="text-center p-3">
+                            <i class="las la-frown la-3x opacity-60 mb-3"></i>
+                            <h3 class="h6 fw-700">Sản phẩm trong giỏ hàng: </h3>
+                        </div>
+                        <ul id="cart-items"></ul>
+                        <p>Total: <span id="total-price">0</span> VND</p>
+                        <a href="Giohang.html" class="btn btn-primary">Xem giỏ hàng</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="nav-login-signup">
+                    <a href="Dangnhap.html">Đăng nhập</a>
+                    <a href="Dangky.html">Đăng ký</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+    
+        <section class="gry-bg py-5">
+            <div class="profile">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 mx-auto">
+                            <div class="card">
+                                <div class="text-center pt-4">
+                                    <h1 class="h4 fw-600">Đăng nhập</h1>
+                                </div>
+    
+                                <div class="px-4 py-3 py-lg-4">
+                                    <div class="">
+                                        <form class="form-default" role="form" action="https://chonongsanonline.com/login" method="POST" onsubmit="return validateForm()">
+                                            <input type="hidden" name="_token" value="p8paEljDKatPghcqvifuqAHJF7WIVGQDmpwKD6go">                                                                                    
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" value="" placeholder="Email" name="email" id="email" autocomplete="off">
+                                                <div id="email-error" class="text-danger" style="display:none;"></div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" placeholder="Mật khẩu" name="password" id="password">
+                                                <div id="password-error" class="text-danger" style="display:none;"></div>
+                                            </div>
+    
+                                            <!-- Đoạn mã HTML sửa lại -->
+                                            <div class="row mb-2" style="position: relative;">
+                                                <div class="col-6">
+                                                    <label style="margin-left: 15px;" class="aiz-checkbox">
+                                                        <input type="checkbox" name="remember">
+                                                        <span class="opacity-60">Ghi nhớ</span>
+                                                        <span class="aiz-square-check"></span>
+                                                    </label>
+                                                    <a href="Quenmatkhau.html" 
+                                                    class="text-reset opacity-60 fs-14 forgot-password-link">Quên mật khẩu?</a>
+                                                </div>
+                                            </div>
+    
+                                            <div class="mb-5">
+                                                <button type="submit" class="btn btn-primary btn-block fw-600">Đăng nhập</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-muted mb-0">Bạn chưa có tài khoản?</p>
+                                        <a href="Dangky.html">Đăng ký ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="Script/Dangnhap.js"></script>
+    <script src="Script/Themvaogiohang.js"></script>
+    </div>
+
+
+<!-- Footer -->
+<footer>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        <div>
+            <h3>GIỚI THIỆU</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Giới thiệu</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Khách hàng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Đối tác</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hệ thống quản lý</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Tuyển dụng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hướng dẫn sử dụng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Hướng dẫn thanh toán</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Câu hỏi thường gặp</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Kiểm tra đơn hàng</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Chính sách bảo mật thông tin</a></li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <h3>LIÊN HỆ</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Địa chỉ: </a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Điện thoại: 0xxxx</a></li>
+                <li class="bullet-checkmark bullet-arrow"><a href="#" style="color: #d1d1d1;">Email: nhauyentranthuy62@gmail.com</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</footer>
+
+    
+</div> 
+</body> 
+</html>
